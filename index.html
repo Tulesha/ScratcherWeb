@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scratcher</title>
+    <meta name="author" content="Tulesha">
+    <meta name="keywords" content="Scratcher,scratch hologram">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/three.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Scratcher</h1>
+    </header>
+
+    <main>
+        <div id="render">
+            <img src="img/cube2D.jpg">
+        </div>
+        <div class="settings">
+            <div class="childSettings">
+                <h2>File settings</h2>
+                <div class="chooseFile">
+                    <input type="text" placeholder="Path input" class="pathInput">
+                    <button class="chooseFileButton">Open in</button>
+                </div>
+            </div>
+
+            <div class="childSettings">
+                <h2>Projection parameters</h2>
+                <div class="childSettingsGrid">
+                    <div class="pAndInput">
+                        <p>Viewer distance</p>
+                        <input type="text" placeholder="Value">
+                    </div>
+                    <div class="pAndInput">
+                        <p>Spacing width</p>
+                        <input type="text" placeholder="Value">
+                    </div>
+                    <div class="pAndInput">
+                        <p>Angle</p>
+                        <input type="text" placeholder="Value">
+                    </div>
+                    <div class="pAndInput">
+                        <p>Plane distance</p>
+                        <input type="text" placeholder="Value">
+                    </div>
+                </div>
+            </div>
+
+            <div class="childSettings">
+                <h2>Canvas properties</h2>
+                <div class="childSettingsGrid">
+                    <div class="pAndInput">
+                        <p>Width</p>
+                        <input type="text" placeholder="Value">
+                    </div>
+                    <div class="pAndInput">
+                        <p>Height</p>
+                        <input type="text" placeholder="Value">
+                    </div>
+                    <div class="pAndInput">
+                        <p>Line width</p>
+                        <input type="text" placeholder="Value">
+                    </div>
+                </div>
+            </div>
+
+            <div class="childSettings">
+                <h2>Projection Engine Settings</h2>
+                <div class="childSettingsGrid">
+                    <div class="pAndInput">
+                        <p>Steps number</p>
+                        <input type="text" placeholder="Value">
+                    </div>
+                    <div class="pAndInput">
+                        <p>Step len</p>
+                        <input type="text" placeholder="Value">
+                    </div>
+                    <div class="checkBoxDiv">
+                        <input type="checkbox" id="raz"/><label for="raz">Convex</label>
+                    </div>
+                    <div class="checkBoxDiv">
+                        <input type="checkbox" id="raz"/><label for="raz">X-Ray</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="confirmButton">Run</button>
+            <button class="confirmButton">Save</button>
+        </div>
+    </main>
+    
+    <footer>
+        <a href="" style="color: white;">Github</a>
+    </footer>
+</body>
+</html>

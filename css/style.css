@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+/*
+    body
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;    
+    font-size: 18px;
+
+    display: grid;
+    text-align: center;
+    margin:auto;
+
+    max-width: 2160px;
+}
+
+/*
+    header
+*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url(../img/Header.jpg);
+    background-position: center;
+    height: 80px;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+}
+
+/*
+    main
+*/
+main {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+/*
+    render
+*/
+
+#render {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas {
+    margin: 15px;
+}
+
+img {
+    margin: 15px;
+    width: 600px;
+    height: 287.8px;
+}
+
+/*
+    settings
+*/
+.settings {
+    display: grid;
+}
+
+.settings > * {
+    margin: 15px;
+    margin-right: 20px;
+}
+
+.childSettings {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input, button{
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.childSettingsGrid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+}
+
+/*
+    file settings
+*/
+
+.chooseFile {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.pathInput {
+    font-size: 18px;
+    width: 80%;
+}
+
+.chooseFileButton {
+    font-size: 18px;
+    width: 90px;
+}
+
+/*
+    projection parameters
+*/
+.pAndInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pAndInput > input {
+    width: 40%;
+}
+
+.checkBoxDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#raz{
+    margin: 7px;
+    width: 20px;
+    height: 20px;
+}
+
+.buttons {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.confirmButton {
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #00779e;
+    transition: 0.2s;
+    margin: 15px;
+}
+
+.confirmButton:hover { background: #00BFFF; }
+
+.confirmButton:active {
+  background: #00FFFF;
+  box-shadow: 0 30px #00FFFF inset;
+  color: black;
+}
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+    background-position: center;
+    height: 80px;
+}
+
+
+@media all and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    } 
+
+    .buttons {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .childSettingsGrid {
+        grid-template-columns: 1fr;
+    }
+}
