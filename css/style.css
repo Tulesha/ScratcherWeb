@@ -28,7 +28,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    background: url(../img/Header.jpg);
+    background: url(../img/header.jpg);
     background-position: center;
     height: 80px;
 }
@@ -64,8 +64,6 @@ canvas {
 
 img {
     margin: 15px;
-    width: 600px;
-    height: 287.8px;
 }
 
 /*
@@ -189,7 +187,7 @@ footer {
 }
 
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1130px) {
     main {
         grid-template-columns: 1fr;
     } 

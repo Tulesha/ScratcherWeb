@@ -1,11 +1,17 @@
 window.onload = function() {
     let scene = new THREE.Scene();
-    let camera = new THREE.PerspectiveCamera(60, 600 / 287.8, 0.1, 1000)
+    let width = document.getElementById('render').clientWidth - 350;
+    let height = document.getElementById('render').clientHeight/2 - 50;
+    let camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 1000)
     let renderer = new THREE.WebGLRenderer();
-    renderer.setSize(600, 287.8);
+    renderer.setSize(width, height);
     
     document.getElementById('render').insertBefore(renderer.domElement, document.getElementById('render').firstChild);
-    
+    document.getElementById('2d').width = width;
+    document.getElementById('2d').height = height
+
+    console.log(document.getElementById('2d'));
+
     let geometry = new THREE.BoxGeometry(10, 10, 10);
     let material = new THREE.MeshBasicMaterial({color: 0x0000FF });
     
